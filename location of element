@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int arr[10]={65,83,56,89,79,32,25,95,34,19};
+    int element,i,pos=-1;
+    printf("Enter the element from the given array: ");
+    scanf("%d",&element);
+    for(i=0;i<10;i++)
+    {
+        if (arr[i]==element)
+        {
+            pos=i;
+            break;
+        }
+    }
+    if (pos==-1)
+    {
+        printf("elements is not found.");
+    }
+    else 
+    {
+        printf("the location/position of element: %d",pos+1);
+
+    }    
+    
+}
